@@ -1,5 +1,6 @@
 package com.parthib.birthdaygreet
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -17,5 +18,10 @@ class MainActivity : AppCompatActivity() {
     fun birthdaygreet(view: View) {
 
         Toast.makeText(this,"Great!",Toast.LENGTH_LONG).show()
+        val nameInput=main
+        val intent= Intent(this,BirthdayGreetingActivity::class.java )
+        startActivity(intent)
     }
+
+
 }
