@@ -16,9 +16,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun birthdaygreet(view: View) {
+        val editText = findViewById<EditText>(R.id.lucy)
+        val lucy = editText.text
+        Toast.makeText(this,"Name is $lucy",Toast.LENGTH_LONG).show()
 
-        Toast.makeText(this,"Great!",Toast.LENGTH_LONG).show()
-        val nameInput=main
         val intent= Intent(this,BirthdayGreetingActivity::class.java )
         startActivity(intent)
     }

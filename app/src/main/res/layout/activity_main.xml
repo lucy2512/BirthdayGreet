@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/nameInput"
+        android:id="@+id/lucy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
@@ -30,7 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
         android:hint="@string/parthib"
         android:gravity="center_horizontal"
-        android:importantForAutofill="no" />
+         />
 
     <Button
         android:id="@+id/button"
@@ -42,6 +42,6 @@
         app:layout_constraintStart_toStartOf="parent"
         android:padding="20dp"
         android:onClick="birthdaygreet"
-        app:layout_constraintTop_toBottomOf="@+id/nameInput" />
+        app:layout_constraintTop_toBottomOf="@+id/lucy" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
