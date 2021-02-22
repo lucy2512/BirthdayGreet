@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this,"Name is $lucy",Toast.LENGTH_LONG).show()
 
         val intent= Intent(this,BirthdayGreetingActivity::class.java )
+        intent.putExtra(BirthdayGreetingActivity.NAME_EXTRA,lucy)
         startActivity(intent)
     }
 
