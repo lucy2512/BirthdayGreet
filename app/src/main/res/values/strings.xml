@@ -4,4 +4,6 @@
     <string name="creat_birthday_card">Creat Birthday Card</string>
     <string name="name">Name</string>
     <string name="parthib">Parthib</string>
+    <string name="textview">textview</string>
+
 </resources>
