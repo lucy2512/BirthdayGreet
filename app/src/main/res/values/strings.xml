@@ -5,5 +5,7 @@
     <string name="name">Name</string>
     <string name="parthib">Parthib</string>
     <string name="textview">textview</string>
+    <string name="happy_birthday">Happy Birthday</string>
+    <string name="gif">gif</string>
 
 </resources>

@@ -13,7 +13,7 @@ class BirthdayGreetingActivity : AppCompatActivity() {
 
         val message =intent.getStringExtra("message")
         val messageTextView: TextView =findViewById(R.id.textView)
-        messageTextView.text="Happy Birthday $message"
+        messageTextView.text="Happy Birthday\n$message!"
 
 
     }
