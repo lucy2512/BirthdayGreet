@@ -20,10 +20,13 @@ class MainActivity : AppCompatActivity() {
         changeActivityButton.setOnClickListener{
             val intent=Intent(this,BirthdayGreetingActivity::class.java)
             val message=messageEditText.text.toString()
-
+            if(message=="") {
+                Toast.makeText(this, "Please Enter Name First", Toast.LENGTH_SHORT).show()
+            }
+            else {
                 intent.putExtra("message", message)
                 startActivity(intent)
-
+            }
     }
 
 
