@@ -10,8 +10,9 @@
         android:id="@+id/helperMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="100dp"
         android:text="@string/enter_the_name"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,13 +21,14 @@
         android:id="@+id/lucy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="60dp"
         android:ems="10"
+        android:gravity="center_horizontal"
         android:hint="@string/parthib"
         android:inputType="textPersonName"
         android:textAlignment="center"
-        android:gravity="center_horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/helperMessage" />
 
@@ -34,12 +36,13 @@
         android:id="@+id/creatBirthdayButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="84dp"
+        android:onClick="CreateBirthdayCard"
+        android:padding="20dp"
         android:text="@string/creat_birthday_card"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
-        android:padding="20dp"
-        android:onClick="CreateBirthdayCard"
         app:layout_constraintTop_toBottomOf="@+id/lucy" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

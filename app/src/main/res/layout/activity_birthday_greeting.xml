@@ -5,31 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BirthdayGreetingActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/cake"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:contentDescription="@string/gif" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/happy_birthday"
-        android:textSize="48sp"
         android:fontFamily="cursive"
-        android:textColor="#ff0006"
-        android:textStyle="bold"
-        android:textAlignment="center"
         android:gravity="center_horizontal"
+        android:text="@string/happy_birthday"
+        android:textAlignment="center"
+        android:textColor="#ff0066"
+        android:textSize="50sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.2" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/doraemon"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        android:contentDescription="@string/gif" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
